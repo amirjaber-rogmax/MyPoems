@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40160D"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:fontFamily="@font/alex_brush"
+        android:text="My Poems"
+        android:textColor="#fff"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/add_poem"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="141dp"
+        android:background="@drawable/round_button"
+        android:onClick="addPoem"
+        android:text="Add Poem"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/view_poems"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignTop="@+id/add_poem"
+        android:background="@drawable/round_button"
+        android:onClick="viewPoems"
+        android:text="View Poems"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#802B1A"
+    tools:context=".AddPoemActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Poem Title"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/type_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="-159dp"
+        android:layout_marginStart="-159dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#33DBFF"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:text="Poem Body"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/type_poem"
+        android:layout_width="300dp"
+        android:layout_height="283dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:fontFamily="@font/alex_brush"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:textColor="#33DBFF"
+        android:textSize="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="savePoem"
+        android:text="Add Poem" />
+
+</RelativeLayout>
